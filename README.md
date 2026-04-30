@@ -14,6 +14,8 @@ The web page rendered by the instance says:
 Hi, I am Alejandro and this is my IaC
 ```
 
+For a detailed step-by-step explanation of what was implemented and why, see [IMPLEMENTACION.md](IMPLEMENTACION.md).
+
 ## Requirements
 
 - AWS account.
