@@ -13,3 +13,4 @@ terraform.rc
 
 pulumi/.venv/
 pulumi/__pycache__/
+pulumi/.tmp/
