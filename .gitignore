@@ -10,6 +10,7 @@ override.tf.json
 *_override.tf.json
 .terraformrc
 terraform.rc
+.env
 
 pulumi/.venv/
 pulumi/__pycache__/

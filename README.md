@@ -16,6 +16,8 @@ Hi, I am Alejandro and this is my IaC
 
 For a detailed step-by-step explanation of what was implemented and why, see [IMPLEMENTACION.md](IMPLEMENTACION.md).
 
+Current delivery status and the AWS permissions blocker are documented in [ESTADO_ENTREGA.md](ESTADO_ENTREGA.md).
+
 ## Requirements
 
 - AWS account.
@@ -48,6 +50,8 @@ AWS_DEFAULT_REGION     = us-east-1
 ```
 
 Mark the AWS keys as `Sensitive`.
+
+For reference only, `.env.example` contains mock placeholder values showing the expected environment variable names. Do not use those mock values for deployment.
 
 ## AWS Setup
 

@@ -531,3 +531,24 @@ Antes de entregar, validar:
 - Repositorio GitHub publico contiene el codigo.
 - No hay credenciales AWS en el repositorio.
 
+## 19. Estado de entrega con permisos AWS pendientes
+
+El repositorio queda listo para revision y ejecucion, pero `terraform plan` y `terraform apply` requieren credenciales AWS reales.
+
+Durante la preparacion se confirmo que el usuario AWS disponible no tiene permisos para administrar IAM ni crear/ver access keys:
+
+```text
+Acceso denegado a iam:GetAccountSummary
+Usuario: arn:aws:iam::721140970721:user/alejandro-pinzon
+Accion: iam:GetAccountSummary
+Contexto: no identity-based policy allows the action
+```
+
+Por ese motivo no se crearon recursos en AWS desde este usuario.
+
+Se agregaron archivos de apoyo:
+
+- `ESTADO_ENTREGA.md`: resume el estado actual, el bloqueo y los pasos para terminar cuando existan permisos.
+- `.env.example`: muestra nombres de variables esperadas con valores mock.
+
+Los valores mock no son credenciales reales y no deben usarse para desplegar. Solo documentan el formato que deben tener las variables en HCP Terraform.
