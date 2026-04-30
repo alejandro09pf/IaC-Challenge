@@ -1,0 +1,7 @@
+config:
+  aws:region: us-east-1
+  iac-alejandro:prefix: alejandro-dev
+  iac-alejandro:ownerName: Alejandro
+  iac-alejandro:vpcCidr: 10.0.0.0/16
+  iac-alejandro:subnetCidr: 10.0.1.0/24
+  iac-alejandro:instanceType: t2.micro
